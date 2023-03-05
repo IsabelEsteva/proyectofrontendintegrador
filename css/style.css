@@ -1,0 +1,105 @@
+.navbar.navbar-expand-lg.bg-secondary{
+background-color: rgb(89, 89, 99);
+}
+
+.list-group{
+   --bs-list-group-bg:transparent;
+   --bs-list-group-border-color:transparent;
+} 
+
+
+
+i.fa-brands.fa-linkedin.fa-2x1,
+i.fa-brands.fa-github.fa-2x1 ,
+i.fa-solid.fa-user-lock.fa-2x1{
+   color:#fff;
+}
+
+
+i.fa-brands.fa-linkedin.fa-2x1:hover{
+background-color: rgb(0, 149, 255);
+}
+
+i.fa-brands.fa-github.fa-2x1:hover{
+    background-color: rgb(0, 255, 183);
+    }
+
+i.fa-solid.fa-user-lock.fa-2x1:hover{
+    background-color: rgb(187, 187, 232);
+    }
+
+
+ .banner{
+   background-image: url(../Assets/imag/pexels-zukiman-mohamad-21787.jpg);
+   background-size:100%;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+   background-color: #94cfea5d;
+   background-size: cover;
+ }
+ section.abaout{
+   margin-top: 50rem;
+   
+ }
+
+
+ .experiencia{
+   background-color:antiquewhite;
+   
+ }
+.educacion{
+   background-color:beige;
+}
+
+.progresos{
+   background-color:aliceblue;
+}
+.proyectos{
+   background-color:bisque;
+}
+
+ .card-1{
+   width: 100%;
+   height: 100%;
+   
+}
+.card-2{
+   width: 100%;
+   height: 100%;
+   
+}
+.card-3{
+   width: 100%;
+   height: 100%;
+   
+}
+footer{
+   background-color: dimgrey;
+   width: 100%;
+   height: 100%;
+}
+.login{
+   height: 100vh;
+   margin-top: 5rem;
+}
+body{
+   background-color:bisque;
+}
+
+.formulario-login{
+margin-top: 20%;
+   
+}
+
+.registro{
+   height: 100vh;
+   margin-top: 5rem;
+   padding-top: 5rem;
+}
+
+.panel{
+   height: 100vh;
+}
+ul{
+ list-style-type:none;
+}

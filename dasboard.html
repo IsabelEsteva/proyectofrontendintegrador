@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- CSS only -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+ <!--Fontawesome-->
+ <script src="https://kit.fontawesome.com/02e8647202.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="css/style.css">
+   <title>Dasboard</title>
+</head>
+<body >
+   <!--Navbar con logo-->
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"> 
+        <img src="Assets/imag/logoAP.png"alt="Logo ArgentinaPrograna" width="100%" height="...">
+      </a>
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item">
+     <!--Button que abre el login-->
+   <a href=""><i class="fa-solid fa-user-lock fa-2xl "></i></a>
+     </li> 
+    </ul>
+  </div>
+  </nav>
+   <section class="acerca de mi mt-5 pt-5">
+     <div class="container text-center ">
+     <h4 class="text-center intro mt-5">
+      <h4>Hola soy</h4> 
+       <h4>Lesbia Isabel Esteva Bernal</h4>
+     <h4 class="text-center intro ">
+     Desarrollador FullStack Jr</h4>
+     </div>
+   </section>
+     <section id="panel"class="panel mt-5 pt-5">
+       <div class="container text-center ">
+         <div class="row  g-2 g-lg-3 mt-5 pt-5">
+           <div class="col">
+             <div ><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <li class="list-group-item"><button  class=""><i class="fa-solid fa-user-lock fa 2xl" data-bs-toggle="modal" data-bs-target="#userModal"></button></i>
+              </button>
+             </div>
+           </div>
+           <div class="col">
+             <div ><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <li class="list-group-item"><i class="fa-solid fa-image fa 2xl " data-bs-toggle="modal" data-bs-target="#bannerModal"></i>
+              </button></div>
+           </div>
+           <div class="col">
+             <div><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <li class="list-group-item"><i class="fa-solid fa-briefcase  fa 2xl " data-bs-toggle="modal" data-bs-target="#trabajoModal" ></i>
+              </button></div>
+           </div>
+         </div>
+         <div class="row  g-2 g-lg-3 mt-3">
+           <div class="col">
+             <div><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <li class="list-group-item"><i class="fa-solid fa-graduation-cap fa 2xl "data-bs-toggle="modal" data-bs-target="#educationModal" ></i>
+              </button></div>
+           </div>
+           <div class="col">
+             <div><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <li class="list-group-item"><i class="fa-solid fa-folder"data-bs-toggle="modal" data-bs-target="#proyectosModal" ></i>
+              </button></div>
+           </div>
+           <div class="col">
+             <div><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <li class="list-group-item"><i class="fa-solid fa-share nods fa 2xl "data-bs-toggle="modal" data-bs-target="#redesModal"></i>
+              </button></div>
+           </div>
+         </div>
+         <div class="row  g-2 g-lg-3 mt-3">
+           <div class="col">
+             <div><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <li class="list-group-item"><i class="fa-solid fa-plus fa 2xl "data-bs-toggle="modal" data-bs-target="#infoModal"></i>
+              </button></div>
+           </div>
+           <div class="col">
+             <div><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <li class="list-group-item"><i class="fa-solid fa-dumbbell fa 2xl "data-bs-toggle="modal" data-bs-target="#habilidadesModal" ></i>
+              </button></div>
+           </div>
+           <div class="col">
+             <div><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <li class="list-group-item"><i class="fa-solid fa-comment fa 2xl "data-bs-toggle="modal" data-bs-target="#commentModal" ></i>
+              </button></div>
+           </div>
+         </div>
+       </div>
+     </section>
+   <!-- Modal user-->
+   <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="userModalLabel">Usuario</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+           <div class="mb-3 row">
+             <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+             <input class="form-control form-control-sm" id="formFileSm" type="text">
+             <div class="col-sm-10">
+     
+             </div>
+           </div>
+           <div class="mb-3 row">
+             <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+             <div class="col-sm-10">
+               <input class="form-control form-control-sm" id="formFileSm" type="text">
+             </div>
+           </div>
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary">Guardar</button>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- Modal banner-->
+   <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">Banner</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+           <div class="mb-3 row">
+             <label for="formFileSm" class="form-label">Foto</label>
+             <div class="col-sm-10">
+               <input class="form-control form-control-sm" id="formFileSm" type="file">
+             </div>
+           </div>
+           <div class="mb-3 row">
+             <div class="col-sm-10">
+               <input class="form-control form-control-sm" id="formFileSm" type="text">
+             </div>
+           </div>
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary">Guardar</button>
+           <button type="button" class="btn btn-secondary">Actualizar</button>
+           <button type="button" class="btn btn-secondary">Eliminar</button>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- Modal trabajo-->
+        <div class="modal fade" id="trabajoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Trabajo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3 row">
+             <label for="formFileSm" class="form-label">Logo de la empresa</label>     
+              <div class="col-sm-10">
+               <input class="form-control form-control-sm" id="formFileSm" type="file">     
+              </div>
+            </div>
+            <div class="mb-3 row">
+             <label for="formFileSm" class="form-label">Titulo del puesto</label>         
+              <div class="col-sm-10">
+               <input class="form-control form-control-sm" id="formFileSm" type="text"> 
+               <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+               <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+               <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+             
+              </div>
+              <div class="mb-3 row">
+               <label for="formFileSm" class="form-label">Logo de la empresa</label>     
+                <div class="col-sm-10">
+                 <input class="form-control form-control-sm" id="formFileSm" type="file">     
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 row">
+             <label for="formFileSm" class="form-label">Titulo del puesto</label>         
+              <div class="col-sm-10">
+               <input class="form-control form-control-sm" id="formFileSm" type="text"> 
+               <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+               <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+               <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+                    
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+         
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal educaccion-->
+    <div class="modal fade" id="educationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">Educacion</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         
+         </div>
+         <div class="modal-body">
+           <div class="mb-3 row">
+             <label for="education1" class="col-sm-2 col-form-label">Educacion</label>
+             <input class="form-control form-control-sm" id="educatuion1" type="file">
+            
+             <div class="col-sm-10">
+               <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+               <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+               <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+             </div>
+           </div>
+           <div class="mb-3 row">
+             <label for="education 2" class="col-sm-2 col-form-label">Educacion</label>
+             <input class="form-control form-control-sm" id="education2" type="file">
+             <div class="col-sm-10">
+               <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+               <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+               <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+             </div>
+           </div>
+           <div class="mb-3 row">
+             <label for="education 3" class="col-sm-2 col-form-label">Educacion</label>
+             <input class="form-control form-control-sm" id="education3" type="file">
+             <div class="col-sm-10">
+               <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+               <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+               <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+             </div>
+           </div>
+           <div class="mb-3 row">
+            
+           </div>
+         </div>
+         <div class="modal-footer">
+          
+ 
+         </div>
+       </div>
+     </div>
+   </div>
+  <!-- Modal Informacion-->
+   <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">Informacion</h5>
+             <label for="staticEmail" class="col-sm-2 col-form-label"></label>
+         </div>
+         <div class="modal-body">
+           <div class="mb-3 row">
+             <label for="staticEmail" class="col-sm-2 col-form-label">Acerca de mi</label>
+            
+             <div class="col-sm-10">
+                <input class="form-control form-control-sm" id="infoModal" type="file">
+             </div>
+           </div>
+           <div class="mb-3 row">
+             <label for="staticEmail" class="col-sm-2 col-form-label"></label>
+             <div class="col-sm-10">
+             <input class="form-control form-control-sm" id="formFileSm" type="text">
+             </div>
+           </div>
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+           <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+           <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!--Modal redes-->
+   <div class="modal fade" id="redesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Redes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="my-3 row">
+       
+        </div>
+        <div class="my-3 row">
+          <label for="formFileSm" class="form-label">Github</label> 
+          <div class="col-sm-10 mt-3">
+            <input class="form-control form-control-sm" id="formFileSm" type="text">
+            <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+            <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+            <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+          </div>
+        </div>
+        <div class="my-3 row">
+         <label for="formFileSm" class="form-label">linkedin</label> 
+         <div class="col-sm-10">
+           <input class="form-control form-control-sm" id="formFileSm" type="text"> 
+           <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+            <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+            <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+         </div>
+       </div>
+       <div class="my-3 row">
+         
+       </div>
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+ </div>
+   <!-- Modal Hard & Soft Skills-->
+   <div class="modal fade" id="habilidadesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">Hard & Soft Skills</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+           <div class="mb-3 row">
+             <label for="formFileSm" class="form-label">Skill</label> 
+             <div class="col-sm-10">
+              <input class="form-control form-control-sm" id="formFileSm" type="text">
+             </div>
+           </div><div class="mb-3 row">
+              <label for="formFileSm" class="form-label">Porcentaje</label>
+             <div class="col-sm-10">
+               <input class="form-control form-control-sm" id="formFileSm" type="text">
+             </div>
+           </div>
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+           <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+           <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- Modal proyectos-->
+   <div class="modal fade" id="proyectosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Proyectos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="my-3 row">
+         <label for="formFileSm" class="form-label">Programar</label>   
+          <div class="col-sm-10">
+            <input class="form-control form-control-sm" id="formFileSm" type="text">
+            <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+            <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+            <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+          </div>
+        </div>
+        <div class="my-3 row">
+          <label for="formFileSm" class="form-label">Redactor de contenido</label> 
+          <div class="col-sm-10 mt-3">
+            <input class="form-control form-control-sm" id="formFileSm" type="text">
+            <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+            <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+            <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+          </div>
+        </div>
+        <div class="my-3 row">
+         <label for="formFileSm" class="form-label">Cyber</label> 
+         <div class="col-sm-10">
+           <input class="form-control form-control-sm" id="formFileSm" type="text"> 
+           <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+           <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+           <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+         </div>
+       </div>
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+ </div>
+ <!--Comentario-->
+ <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Comentario</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <div class="mb-3 row">
+           <label for="staticEmail" class="col-sm-2 col-form-label">Agregar comentario</label>
+           <input class="form-control form-control-sm" id="formFileSm" type="text">
+           <div class="col-sm-10">
+   
+           </div>
+         </div>
+         <div class="mb-3 row">
+           <input class="form-control form-control-sm" id="formFileSm" type="text">
+           <div class="col-sm-10">
+ 
+           </div>
+         </div>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary mt-3">Actualizar</button>
+            <button type="button" class="btn btn-secondary mt-3">Eliminar</button>
+         <button type="button" class="btn btn-secondary mt-3">Guardar</button>
+       </div>
+     </div>
+   </div>
+ </div>
+   <!--Footer-->
+ <h2><Footer></h2>
+   <footer class=" bg primary  text-center fs-6">
+   <div class="pt-3">
+     <p>&copy Copyright Lesbia Isabel Esteva - 2022</p></div>
+   </footer>
+ 
+      
+     <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+ </body>
+ </html>
